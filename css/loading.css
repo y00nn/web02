@@ -1,0 +1,30 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+.lilita-one-regular {
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+body{
+    font-family: "Lilita One", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #6cc7eb;
+    background-color: #000000;
+    margin: 0;
+}
+
+.heading{
+    font-size: 5rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+    background-color: #ffffff;
+    background-image: linear-gradient(170deg, #c9c9c9 30%, #6cc7eb 50%, #c9c9c9 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}   
