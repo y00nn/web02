@@ -1,0 +1,217 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Asta+Sans:wght@300..800&display=swap');
+
+:root{
+    --blue: #0B1D3F;
+    --deepblue: #182A4B;
+    --black: #121619;
+    --white: #F4F6F9;
+    --point: #3DDAD7;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: "Gowun Dodum", sans-serif;
+}
+
+.gowun-dodum-regular{
+    font-family: "Gowun Dodum", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body{
+    color: var(--black);
+    line-height: 1.6;
+    background-color: var(--white);
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--blue);
+    height: 100px;
+    width: 100%;
+    color: var(--blue);
+    padding: 0rem 4rem;
+    z-index: 1000;
+    position: fixed;
+}
+
+.hero_content h1{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    color: var(--point);
+}
+
+.hero_content p{
+    font-size: 1.7rem;
+    color: var(--white);
+    margin-bottom: 2rem;
+}
+
+.logo img{
+    display: flex;
+    justify-content: center;
+    width: 170px;
+    height: 70px;
+}
+
+.navbar .menu{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar a{
+    display: block;
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.navbar a:hover{
+    color: var(--point);
+}
+
+.menu_m{
+    position: relative;
+    text-align: center;
+    width: 150px;
+    padding: 1.5rem;
+    z-index: 1;
+}
+
+.submenu{
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: var(--blue);
+    min-width: 180px;
+    top: 100%;
+}
+
+.submenu li{
+    border-bottom: 1px solid var(--deepblue);
+}
+
+.submenu li a{
+    color: var(--white);
+    padding: 10px;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 1.1rem;
+}
+
+.submenu li a:hover{
+    background-color: var(--blue);
+    color: var(--point);
+}
+
+.menu_m:hover .submenu{
+    display: block;
+}
+
+.Question{
+    padding: 40px 20px;
+}
+
+.title-wrapper{
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 40px;
+}
+
+.title{
+    font-size: 60px;
+    font-weight: bold;
+    color: var(--blue);
+    margin-right: 20px;
+    white-space: nowrap;
+}
+
+.title-line{
+    flex-grow: 1;
+    height: 6px;
+    background-color: var(--blue);
+}
+
+#question{
+    position: relative;
+    width: 100%;
+    padding: 6rem 0 10rem;
+    margin-top: -100px;
+}
+
+#question p{
+    color: var(--black);
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 5rem;
+    cursor: default;
+}
+
+.question-form{
+    width: 700px;
+    margin: 0 auto;
+}
+
+.question-form label{
+    color: var(--blue);
+    font-size: 1.3rem;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.question-field{
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 1rem;
+    padding-top: 20px;
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    margin-bottom: 3rem;
+    font-size: 1.3rem;
+}
+
+.question-field::placeholder{
+    font-size: 1.3rem;
+}
+
+.question-btn{
+    background: var(--blue);
+    color: #ffffff;
+    width: 100%;
+    height: 80px;
+    padding: 1rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    font-size: 1.7rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+}
+
+#question p.q{
+    margin-top: 100px;
+    margin-bottom: -230PX;
+    font-size: 1.1rem;
+    font-weight: normal;
+}
+
+footer{
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--blue);
+    position: relative;
+    color: var(--white);
+    height: 100px;
+}
